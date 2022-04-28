@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Creating an Account</title>
+		<link rel="stylesheet" href="/css/register.css" />
+	</head>
+	<body>
+		<div class="formContainer">
+			<form class="form">
+				<div class="formHeader">
+					<h2>Creating An Account</h2>
+				</div>
+				<div class="formBody">
+					<input type="text" placeholder="Username" class="username" />
+					<input
+						type="password"
+						placeholder="Password"
+						class="password"
+						pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+					/>
+					<img
+						class="seePassword"
+						width="27px"
+						src="https://cdn-icons-png.flaticon.com/512/65/65000.png?w=360"
+					/>
+					<input type="email" placeholder="Email" class="email" />
+				</div>
+				<div class="formFooter">
+					<button class="submitBtn" type="submit">Create</button>
+					<a href="./auth.html">Already have an Account?</a>
+				</div>
+			</form>
+		</div>
+		<script src="/js/register.js"></script>
+	</body>
+</html>

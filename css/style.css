@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+	font-family: 'Rubik',
+		sans-serif;
+	background: #ffedfa;
+}
+
+header{
+	background: #eeaabb;
+	border-bottom: 1.5px solid #8c102f;
+}
+
+.navbarContainer{
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+	min-height: 70px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbarContainer h1{
+	font-weight: 600;
+	color: #bc0061;
+}
+
+.navbarContainer nav{
+	width: 50%;
+}
+
+.categoriesList{
+	width: 100%;
+	margin: 5px 10px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.categoriesList li{
+	font-weight: 500;
+	font-size: 19px;
+	color: whitesmoke;
+	text-shadow: 0 0 2pt rgba(0, 0, 0, 0.299);
+	cursor: pointer;
+	transition: .3s;
+}
+
+.categoriesList li:hover{
+	color: #8c102f;
+}
+
+.logoutBtn{
+	padding: 7px 20px;
+	border-radius: 5px;
+	border: 1px solid #ee6b8c;
+	outline: 0;
+	background: #ee6b8c;
+	color: whitesmoke;
+	transition: .3s;
+	font-size: 16px;
+}
+
+.logoutBtn:hover{
+	color: #963049;
+	background: transparent;
+	box-shadow: 0 0 10px #8c102f;
+}
+
+.addProduct{
+	margin: 0 15px;
+	transform: translateY(5px);
+	padding: 2px 8px;
+	border-radius: 50%;
+	border: 1px solid #ee6b8c;
+	outline: 0;
+	background: #ee6b8c;
+	color: whitesmoke;
+	transition: .3s;
+	font-size: 30px;
+}
+
+.addProduct:hover{
+	color: #963049;
+	background: transparent;
+	box-shadow: 0 0 10px #8c102f;
+}
+
+/* ============================================== */
+
+.wrapper{
+	width: 90%;
+	margin: 50px auto;
+}
+
+.container{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.card{
+	border: 1px solid #8c102f;
+	margin: 15px 0;
+	padding: 20px;
+	background: #eab0da;
+	border-radius: 15px;
+	width: 340px;
+	min-height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;	
+}
+
+.card-header h3{
+	font-size: 25px;
+	font-weight: 500;
+	color: #8c102f;
+}
+
+.card-body{
+	width: 95%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+	justify-content: space-around;
+	height: 100%;
+}
+
+.card-img{
+	margin: 0 auto;
+	width: 100%;
+	height: 85%;
+}
+
+.card-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.card-footer{
+	padding: 10px 50px;
+	background: #eabffa;
+	border-radius: 15px;
+}
+.card-footer span{
+	font-size: 20px;
+	color: #0c980c;
+	font-weight: 500;
+}
+
+.card .btnContainer{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.card .deleteProduct{
+	margin-top: 20px;
+	padding: 7px 20px;
+	border-radius: 15px;
+	border: 1px solid #ee6b8c;
+	font-size: 16px;
+	background: #ee3a3a;
+	color: whitesmoke;
+}
+
+.card .deleteProduct:hover{
+	background: transparent;
+	color: red;
+	box-shadow: 0 0 5px #ee3a3a71;
+}
+
+.card .moreBtn{
+	margin-top: 20px;
+	padding: 7px 20px;
+	border-radius: 15px;
+	border: 1px solid #ee6b8c;
+	font-size: 16px;
+	background: #ee6b8c;
+	color: whitesmoke;
+
+}
+
+.card .moreBtn:hover{
+	background: transparent;
+	color: #e4426b;
+	box-shadow: 0 0 5px #ee6b8c;
+}
+
+/* ================================================ */
+
+.adminPanel{
+	width: 100%;
+	height: 50vh;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.adminPanel.active {
+	display: flex;
+}
+
+.adminPanelCard{
+	border: 1px solid #6096ec;
+	width: 400px;
+	height: 85%;
+	background: #bcd;
+	padding: 20px;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.adminPanelCardHeader h2{
+	font-size: 25px;
+	font-weight: 500;
+	color: #183d4f;
+}
+
+
+.adminPanelCardBody{
+	height: 65%;
+	width: 85%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.adminPanelCardBody label{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.adminPanelCardBody label span{
+	color: #054e73;
+}
+
+.adminPanelCardBody label input{
+	padding: 5px 5px;
+	border-radius: 15px;
+	border: 1px solid #0782bf;
+	outline: 0;
+}
+
+.adminPanelCardFooter {
+	display: flex;
+	justify-content: space-evenly;
+	width: 80%;
+	align-items: center;
+}
+
+.cancelAdmin,
+.addAdmin{
+	border-radius: 15px;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	color: whitesmoke;
+	padding: 7px 17px;
+}
+
+.cancelAdmin{
+	background:#e77474;
+}
+
+.addAdmin{
+	background: #0782bf;
+}
+
+@media (max-width: 768px) {
+	.navbarContainer{
+		flex-direction: column;
+		padding: 20px 0;
+		justify-content: space-around;	
+	}
+	.navbarContainer nav{
+		width: 100%;
+	}
+}

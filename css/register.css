@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+
+body{
+	font-family: 'Rubik',
+	sans-serif;
+}
+
+.formContainer{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form{
+	width: 350px;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	border-radius: 15px;
+	background: #dcdcdcdc;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.359);
+	justify-content: space-around;
+	align-items: center;
+}
+
+.formHeader h2{
+	width: 100%;
+	font-size: 27px;
+	font-weight: 400;
+	color: #ff6a00;
+}
+
+.formBody{
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.formBody input{
+	padding: 8px 20px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+
+}
+
+.formFooter button{
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	padding: 7px 30px;
+	font-size: 16px;
+	color: whitesmoke;
+	background: #ff6a00;
+	transition: .3s;
+	margin-bottom: 15px;
+}
+
+.formFooter{
+	display: flex;
+	flex-direction: column;
+}
+
+.formFooter button:hover{
+	background: transparent;
+	color: #ff6a00;
+	border: 1px solid #ff6a00;
+}
+
+.seePassword {
+	position: absolute;
+	right: 0.7rem;
+	bottom: 4.7rem;
+}

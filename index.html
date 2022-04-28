@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Wildberries</title>
+		<link rel="stylesheet" href="/css/style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="navbarContainer">
+				<h1>Wildberries</h1>
+				<nav>
+					<ul class="categoriesList"></ul>
+				</nav>
+				<div class="logoutContainer">
+					<button class="logoutBtn">Logout</button>
+					<button class="addProduct" title="Add new Product">+</button>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="wrapper">
+				<div class="adminPanel">
+					<div class="adminPanelCard">
+						<div class="adminPanelCardHeader">
+							<h2>Adding A Product</h2>
+						</div>
+						<div class="adminPanelCardBody">
+							<label>
+								<span>Title</span>
+								<input type="text" class="title" />
+							</label>
+							<label>
+								<span>Description</span>
+								<input type="text" class="desc" />
+							</label>
+							<label>
+								<span>Price</span>
+								<input type="text" class="price" />
+							</label>
+							<label>
+								<span>Img Url</span>
+								<input type="text" class="imgURL" />
+							</label>
+							<label>
+								<span>Category</span>
+								<input type="text" class="category" />
+							</label>
+						</div>
+						<div class="adminPanelCardFooter">
+							<button class="cancelAdmin">Cancel</button>
+							<button class="addAdmin">Add</button>
+						</div>
+					</div>
+				</div>
+				<div class="container"></div>
+			</div>
+		</main>
+		<footer></footer>
+		<script src="/js/script.js"></script>
+	</body>
+</html>
