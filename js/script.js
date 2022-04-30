@@ -17,6 +17,7 @@ const $desc = document.querySelector('.desc')
 const $imgURL = document.querySelector('.imgURL')
 const $price = document.querySelector('.price')
 const $category = document.querySelector('.category')
+const $loading = document.querySelector('.row')
 
 // ================ STATES ====================
 
@@ -83,6 +84,8 @@ function getProducts() {
 	})
 }
 window.addEventListener('load', () => {
+	$loading.innerHTML =
+		'<div class="lds-facebook"><div></div><div></div><div></div></div>'
 	getProducts()
 })
 
@@ -132,6 +135,7 @@ function getCategories(route) {
 
 function cardTemplate(base) {
 	const template = base
+		.reverse()
 		.map(({ category, description, id, image, image_url, price, title }) => {
 			return `
 				<div class="card">
@@ -141,7 +145,7 @@ function cardTemplate(base) {
 					<div class="card-body">
 						<div class="card-img">
 							<img src="${image ? image : image_url}">
-						</div>				
+					</div>
 					</div>
 					<div class="card-footer">
 						<span>${price}$</span>
