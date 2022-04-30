@@ -124,6 +124,7 @@ $createProduct.addEventListener('click', (e) => {
 		image_url: $imgURL.value,
 		category: $category.value,
 	}
+	console.log(sendBody)
 	REQUESTS.post(`${BASE_URL}/products/create/`, sendBody).then(getProducts)
 })
 
