@@ -99,7 +99,7 @@ header{
 
 .wrapper{
 	width: 90%;
-	margin: 50px auto;
+	margin: 0 auto;
 }
 
 .container{
@@ -204,7 +204,7 @@ header{
 
 .adminPanel{
 	width: 100%;
-	height: 50vh;
+	height: 400px;
 	justify-content: center;
 	align-items: center;
 	display: none;
@@ -217,7 +217,7 @@ header{
 .adminPanelCard{
 	border: 1px solid #6096ec;
 	width: 400px;
-	height: 85%;
+	height: 300px;
 	background: #bcd;
 	padding: 20px;
 	border-radius: 15px;
